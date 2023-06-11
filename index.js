@@ -50,10 +50,37 @@ celToFah(0);
 celToFah(100);
 celToKel(173.13);
 celToKel(-13);
+
+°F = °C × (9/5) + 32
+K = °C + 273.15
 */
+
+function celToFah(celcius) {
+    const fahrenheit = celcius * (9/5) + 32
+    console.log(fahrenheit)
+}
+
+function celToKel(celcius) {
+    const kelvin = celcius + 273.15
+    console.log(kelvin)
+}
+
+celToFah(37.5);
+celToFah(-40);
+celToFah(0);
+celToFah(100);
+celToKel(173.13);
+celToKel(-13);
 
 /* Q4. Create a function called pow that gets two values and computes for the power value of the two numbers
 pow(2, 3) -> 2 * 2 * 2 -> 8
 
 Note: You can not use Math.pow function. You need to write your own implementation of the function.
 */
+
+function pow(x, y) {
+    let power = x ** y
+    console.log(power)
+}
+
+pow(2, 3)
