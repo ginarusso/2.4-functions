@@ -57,7 +57,6 @@ K = °C + 273.15
 
 function celToFah(celcius) {
     return fahrenheit = celcius * (9/5) + 32
-    
 }
 
 function celToKel(celcius) {
