@@ -30,16 +30,25 @@ console.log(fizzBuzz(9999)); //Fizz
 
 /* Q2. Create a function called averager that gets the average of an array. */
 const prices = [12.99, 17.75, 88.12, 111.11, 77.09, 53.45];
-let sum = 0
+// let sum = 0
 
-function averager() {
-    for (let i = 0; i < prices.length; i++) {
-        sum += prices[i]
+// function averager() {
+//     for (let i = 0; i < prices.length; i++) {
+//         sum += prices[i]
+//     }
+//     return (sum/prices.length).toFixed(2)
+// }
+
+function averager(prices) {
+    let sum = 0
+    for (const price of prices) {
+        sum += price
     }
-    return (sum/prices.length).toFixed(2)
+    const average = sum / prices.length
+    return average.toFixed(2)
 }
 
-let result = averager(prices)
+const result = averager(prices)
 console.log(result); //60.09
 
 /* Q3. Create functions that would convert temperature from Celsius to Fahrenheit and Kelvin. Round the result to two decimal places. 
