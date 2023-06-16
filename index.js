@@ -13,20 +13,20 @@ fizzBuzz(9999); //Fizz
 
 function fizzBuzz(num) {
     if (num % 3 === 0 && num % 5 === 0) {
-        console.log('FizzBuzz')
+        return "FizzBuzz"
     } else if (num % 3 === 0) { 
-        console.log('Fizz')
+        return "Fizz"
             } else if (num % 5 === 0) {
-                console.log('Buzz')
+                return "Buzz"
                     } else if (num % 3 !== 0 || num % 5 !== 0) {
-                        console.log('Pop')
+                        return "Pop"
                         }
 }
 
-fizzBuzz(49); //Pop
-fizzBuzz(55); //Buzz
-fizzBuzz(120); //FizzBuzz
-fizzBuzz(9999); //Fizz
+console.log(fizzBuzz(49)); //Pop
+console.log(fizzBuzz(55)); //Buzz
+console.log(fizzBuzz(120)); //FizzBuzz
+console.log(fizzBuzz(9999)); //Fizz
 
 /* Q2. Create a function called averager that gets the average of an array. */
 const prices = [12.99, 17.75, 88.12, 111.11, 77.09, 53.45];
