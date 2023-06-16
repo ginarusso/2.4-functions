@@ -40,7 +40,7 @@ function averager() {
 }
 
 let result = averager(prices).toFixed(2);
-console.log(result);
+console.log(result); //60.09
 
 /* Q3. Create functions that would convert temperature from Celsius to Fahrenheit and Kelvin. Round the result to two decimal places. 
 
@@ -63,12 +63,12 @@ function celToKel(celcius) {
     return kelvin = celcius + 273.15
 }
 
-console.log(celToFah(37.5));
-console.log(celToFah(-40));
-console.log(celToFah(0));
-console.log(celToFah(100));
-console.log(celToKel(173.13));
-console.log(celToKel(-13));
+console.log(celToFah(37.5));//99.5
+console.log(celToFah(-40));//-40
+console.log(celToFah(0));//32
+console.log(celToFah(100));//212
+console.log(celToKel(173.13));//446.28
+console.log(celToKel(-13));//260.15
 
 
 /* Q4. Create a function called pow that gets two values and computes for the power value of the two numbers
@@ -78,7 +78,7 @@ Note: You can not use Math.pow function. You need to write your own implementati
 */
 
 function pow(x, y) {
-    return power = x ** y
+    return powNum = x ** y
 }
 
-console.log(pow(2, 3))
+console.log(pow(2, 3)) //8
