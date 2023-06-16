@@ -45,7 +45,7 @@ function averager(prices) {
         sum += price
     }
     const average = sum / prices.length
-    return average.toFixed(2)
+    return parseInt(average.toFixed(2))
 }
 
 const result = averager(prices)
