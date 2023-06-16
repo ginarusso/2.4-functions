@@ -79,8 +79,7 @@ Note: You can not use Math.pow function. You need to write your own implementati
 */
 
 function pow(x, y) {
-    let power = x ** y
-    return power
+    return power = x ** y
 }
 
 console.log(pow(2, 3))
