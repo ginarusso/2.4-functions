@@ -36,10 +36,10 @@ function averager() {
     for (let i = 0; i < prices.length; i++) {
         sum += prices[i]
     }
-    return (sum/prices.length)
+    return (sum/prices.length).toFixed(2)
 }
 
-let result = averager(prices).toFixed(2);
+let result = averager(prices)
 console.log(result); //60.09
 
 /* Q3. Create functions that would convert temperature from Celsius to Fahrenheit and Kelvin. Round the result to two decimal places. 
