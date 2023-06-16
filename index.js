@@ -56,21 +56,21 @@ K = °C + 273.15
 */
 
 function celToFah(celcius) {
-    const fahrenheit = celcius * (9/5) + 32
-    console.log(fahrenheit)
+    return fahrenheit = celcius * (9/5) + 32
+    
 }
 
 function celToKel(celcius) {
-    const kelvin = celcius + 273.15
-    console.log(kelvin)
+    return kelvin = celcius + 273.15
 }
 
-celToFah(37.5);
-celToFah(-40);
-celToFah(0);
-celToFah(100);
-celToKel(173.13);
-celToKel(-13);
+console.log(celToFah(37.5));
+console.log(celToFah(-40));
+console.log(celToFah(0));
+console.log(celToFah(100));
+console.log(celToKel(173.13));
+console.log(celToKel(-13));
+
 
 /* Q4. Create a function called pow that gets two values and computes for the power value of the two numbers
 pow(2, 3) -> 2 * 2 * 2 -> 8
@@ -80,7 +80,7 @@ Note: You can not use Math.pow function. You need to write your own implementati
 
 function pow(x, y) {
     let power = x ** y
-    console.log(power)
+    return power
 }
 
-pow(2, 3)
+console.log(pow(2, 3))
